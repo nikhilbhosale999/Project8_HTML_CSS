@@ -11,13 +11,14 @@
     align-items: center;
     padding: 3rem 9rem;
     background-color: rgba(0, 0, 0, 0);
-    
+    flex-wrap: wrap;
 }
 .nav-items{
     display: flex;
     font-size: 20px;
    font-family: 'Roboto';
    color: #242C76;
+   flex-wrap: wrap;
 }
 .nav-item{
     margin-left: 20px;
@@ -35,16 +36,14 @@
 /* Header */
 
 .intro-section{
-    position: absolute;
     display: flex;
+    flex-wrap: wrap;
 }
 body{
     height: 100vh;
     background-image: url(/images/backcover.svg);
     background-position: 100% 100%;
     background-repeat:no-repeat ;
-    
-   
 }
 .left-section{
     padding-top: 10vh;
@@ -83,3 +82,15 @@ body{
      margin-top: -50px;
 }
 
+@media only screen and (max-width: 720px) {
+    .intro-img{
+        display: none;
+   }
+   .left-section{
+    margin-left: 2rem;
+   }
+
+   nav{
+    padding: 1rem;
+   }
+  }
